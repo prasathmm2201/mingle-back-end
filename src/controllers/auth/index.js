@@ -82,6 +82,7 @@ export const createSignUp = ({
 
         }
         catch (err) {
+            console.log(err , '----')
             reject(err)
         }
     })
