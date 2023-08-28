@@ -27,7 +27,7 @@ const server = app.listen(PORT, () => {
 
 export const io = new Server(server, {
   cors: {
-    origin: config?.FRONT_END_URL,
+    origin: '*',
     credentials: true,
   },
 });
