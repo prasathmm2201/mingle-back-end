@@ -8,6 +8,9 @@
     "start": " node_modules/.bin/babel-node index.js -r dotenv/config",
     "migration": "npx knex migrate:latest --knexfile ./DB/index.js"
   },
+  "engines": {
+    "node": ">=16"
+  },
   "author": "",
   "license": "ISC",
   "dependencies": {
