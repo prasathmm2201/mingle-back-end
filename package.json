@@ -1,0 +1,44 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start:nodemon": "nodemon babel-node index.js",
+    "start": "babel-node index.js -r dotenv/config",
+    "migration": "npx knex migrate:latest --knexfile ./DB/index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/cli": "^7.22.9",
+    "@babel/core": "^7.22.9",
+    "@babel/node": "^7.22.6",
+    "@babel/preset-env": "^7.22.9",
+    "bcryptjs": "^2.4.3",
+    "continuation-local-storage": "^3.2.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "express-session": "^1.17.3",
+    "firebase-admin": "^11.10.1",
+    "google-auth-library": "^9.0.0",
+    "husky": "^8.0.3",
+    "install": "^0.13.0",
+    "jsonwebtoken": "^9.0.1",
+    "knex": "^2.5.1",
+    "nodemon": "^3.0.1",
+    "npm": "^9.8.1",
+    "objection": "^3.0.4",
+    "passport": "^0.6.0",
+    "passport-google-oauth2": "^0.2.0",
+    "passport-oauth2": "^1.7.0",
+    "pg": "^8.11.1",
+    "prettier": "^3.0.0",
+    "socket.io": "^4.7.2"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^17.4.2",
+    "@commitlint/config-conventional": "^17.4.2"
+  }
+}
