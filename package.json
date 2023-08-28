@@ -9,7 +9,7 @@
     "migration": "npx knex migrate:latest --knexfile ./DB/index.js"
   },
   "engines": {
-    "node": ">=16 <18"
+    "node": ">=16 <17"
   },
   "author": "",
   "license": "ISC",
