@@ -27,7 +27,7 @@ const server = app.listen(PORT, () => {
 
 export const io = new Server(server, {
   cors: {
-    origin: '*',
+    origin: config?.FRONT_END_URL,
     credentials: true,
   },
 });
@@ -192,7 +192,7 @@ app.use(passport.initialize());
 app.use(passport.session());
 app.use(express.urlencoded({ extended: false }))
 app.use(express.json({ limit: "20mb", extended: true }));
-app.use(cors({ origin: config?.FRONT_END_URL, credentials: true }));
+app.use(cors());
 app.use("/", routers);
 
 
